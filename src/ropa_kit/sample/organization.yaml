@@ -1,0 +1,10 @@
+# Dados do controlador e do encarregado (art. 41). Tudo aqui é fictício.
+controller:
+  name: Empresa Exemplo Ltda
+  cnpj: 11.222.333/0001-81
+  address: Rua Exemplo, 100, Cidade Exemplo/UF
+dpo:
+  name: Encarregado de Dados (exemplo)
+  email: privacidade@exemplo.test
+  channel: https://exemplo.test/privacidade
+reviewed_at: 2026-11-01

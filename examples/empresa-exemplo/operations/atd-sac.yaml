@@ -1,0 +1,25 @@
+id: atd-sac
+name: Atendimento ao cliente (SAC)
+area: Atendimento
+owner: Coordenação de Atendimento
+purpose: Registrar e responder reclamações, dúvidas e pedidos.
+data_subjects: [clientes]
+personal_data: [nome, CPF, telefone, e-mail, gravação da ligação]
+legal_basis: legal_obligation
+retention:
+  period: 2 anos
+  justification: Regras do serviço de atendimento ao consumidor
+  disposal: Exclusão automática das gravações
+systems: [Sistema de chamados, Central telefônica]
+processors:
+  - name: Contact Center Exemplo Ltda
+    service: Atendimento telefônico
+    country: BR
+    contract: true
+    dpa: true
+security_measures:
+  - Gravações com acesso restrito à supervisão
+  - Mascaramento do CPF na tela do atendente
+risk:
+  likelihood: 2
+  impact: 3

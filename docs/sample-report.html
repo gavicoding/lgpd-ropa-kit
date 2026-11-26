@@ -1,0 +1,194 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Registro das Operações de Tratamento: Empresa Exemplo Ltda</title><style>
+:root{--bg:#f7f8fa;--card:#fff;--text:#1c2430;--muted:#5b6676;--line:#dde2e8;--accent:#1f6feb;
+--err:#c62828;--warn:#a15c00;--sens:#8e24aa;--ok:#2e7d32;--h1:#fdecea;--h2:#fff4e0;--h3:#e8f5e9}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141a;--card:#171d25;--text:#e6ebf1;--muted:#9aa6b5;
+--line:#2a333f;--accent:#58a6ff;--err:#ff7b72;--warn:#e3b341;--sens:#d2a8ff;--ok:#7ee787;
+--h1:#3d1d1d;--h2:#3a2d12;--h3:#16301d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);
+font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.15rem;margin:32px 0 12px;
+border-bottom:1px solid var(--line);padding-bottom:6px}h3{font-size:1rem;margin:20px 0 8px}
+.meta{color:var(--muted);margin:2px 0}.disclaimer{font-size:.85rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.card b{display:block;font-size:1.5rem}.card.err b{color:var(--err)}.card.warn b{color:var(--warn)}
+.scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;vertical-align:top;
+padding:7px 10px;border-bottom:1px solid var(--line)}th{font-size:.8rem;text-transform:uppercase;
+letter-spacing:.03em;color:var(--muted);white-space:nowrap}tr:last-child td{border-bottom:0}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.85em}
+.tag{display:inline-block;border-radius:4px;padding:0 6px;margin:1px 2px 1px 0;font-size:.8rem;
+border:1px solid var(--line)}.tag.sens{border-color:var(--sens);color:var(--sens);font-weight:600}
+.ref{color:var(--muted);font-size:.8rem}.bad{color:var(--err);font-weight:600}
+.lvl-error{color:var(--err);font-weight:600}.lvl-warning{color:var(--warn);font-weight:600}
+.areas{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.areas a{display:block;background:var(--card);border:1px solid var(--line);border-radius:6px;
+padding:6px 10px;color:var(--accent);text-decoration:none}
+.matrix{display:grid;grid-template-columns:auto repeat(5,minmax(80px,1fr));gap:4px;
+min-width:520px;padding:10px}
+.matrix .ax{color:var(--muted);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.cell{min-height:54px;border-radius:6px;padding:4px;font-size:.75rem}
+.cell.lo{background:var(--h3)}.cell.mid{background:var(--h2)}.cell.hi{background:var(--h1)}
+.cell a{color:var(--text)}
+footer{margin-top:40px;color:var(--muted);font-size:.8rem}
+@media print{body{background:#fff}.scroll,.card{border-color:#ccc}h2{break-after:avoid}}
+</style></head>
+<body><main>
+<h1>Registro das Operações de Tratamento</h1>
+<p class='meta'>Controlador: <b>Empresa Exemplo Ltda</b> · CNPJ 11.222.333/0001-81</p>
+<p class='meta'>Encarregado: Encarregado de Dados (exemplo) · privacidade@exemplo.test · https://exemplo.test/privacidade</p>
+<p class='meta'>Inventário revisado em 2026-11-01 · Relatório gerado em 2026-11-26</p>
+<p class='disclaimer'>Ferramenta de apoio: não substitui orientação jurídica.</p>
+<div class='cards'>
+<div class='card '><b>12</b>operações</div>
+<div class='card '><b>2</b>com dados sensíveis</div>
+<div class='card '><b>2</b>com transferência internacional</div>
+<div class='card '><b>3</b>pedem RIPD</div>
+<div class='card err'><b>3</b>erros</div>
+<div class='card warn'><b>4</b>avisos</div>
+</div>
+<h2 id='areas'>Índice por área</h2><ul class='areas'>
+<li><a href='#area-Atendimento'>Atendimento (2)</a></li>
+<li><a href='#area-Financeiro'>Financeiro (2)</a></li>
+<li><a href='#area-Marketing'>Marketing (2)</a></li>
+<li><a href='#area-RH'>RH (4)</a></li>
+<li><a href='#area-TI'>TI (2)</a></li>
+</ul>
+<h2>Operações</h2>
+<h3 id='area-Atendimento'>Atendimento</h3><div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operação</th>
+<th>Titulares</th>
+<th>Dados tratados</th>
+<th>Base legal</th>
+<th>Retenção</th>
+</tr></thead><tbody>
+<tr id='op-atd-chat-online'><td><code>atd-chat-online</code></td><td><b>Chat de atendimento no site</b><br><span class='ref'>Atender clientes pelo chat do site.</span><br><span class='ref'>Responsável: Coordenação de Atendimento</span></td><td>clientes, visitantes do site</td><td><span class='tag'>nome</span><span class='tag'>e-mail</span><span class='tag'>conteúdo da conversa</span></td><td>Execução de contrato ou procedimentos preliminares<br><span class='ref'>art. 7, V · GDPR art. 6(1)(b)</span></td><td>1 ano</td></tr>
+<tr id='op-atd-sac'><td><code>atd-sac</code></td><td><b>Atendimento ao cliente (SAC)</b><br><span class='ref'>Registrar e responder reclamações, dúvidas e pedidos.</span><br><span class='ref'>Responsável: Coordenação de Atendimento</span></td><td>clientes</td><td><span class='tag'>nome</span><span class='tag'>CPF</span><span class='tag'>telefone</span><span class='tag'>e-mail</span><span class='tag'>gravação da ligação</span></td><td>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 7, II · GDPR art. 6(1)(c)</span></td><td>2 anos<br><span class='ref'>Regras do serviço de atendimento ao consumidor</span></td></tr>
+</tbody></table></div>
+<h3 id='area-Financeiro'>Financeiro</h3><div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operação</th>
+<th>Titulares</th>
+<th>Dados tratados</th>
+<th>Base legal</th>
+<th>Retenção</th>
+</tr></thead><tbody>
+<tr id='op-fin-analise-de-credito'><td><code>fin-analise-de-credito</code></td><td><b>Análise de crédito de clientes</b><br><span class='ref'>Definir limite de crédito para vendas a prazo.</span><br><span class='ref'>Responsável: Gerência Financeira</span></td><td>clientes</td><td><span class='tag'>nome</span><span class='tag'>CPF</span><span class='tag'>renda declarada</span><span class='tag'>score de crédito</span></td><td>Proteção do crédito<br><span class='ref'>art. 7, X</span></td><td>5 anos após o fim do relacionamento</td></tr>
+<tr id='op-fin-contas-a-pagar'><td><code>fin-contas-a-pagar</code></td><td><b>Contas a pagar</b><br><span class='ref'>Pagar fornecedores pessoa física e prestadores de serviço.</span><br><span class='ref'>Responsável: Gerência Financeira</span></td><td>fornecedores pessoa física</td><td><span class='tag'>nome</span><span class='tag'>CPF</span><span class='tag'>dados bancários</span><span class='tag'>notas fiscais</span></td><td>Execução de contrato ou procedimentos preliminares<br><span class='ref'>art. 7, V · GDPR art. 6(1)(b)</span></td><td>5 anos após o exercício<br><span class='ref'>Prazo de guarda de documentos fiscais</span></td></tr>
+</tbody></table></div>
+<h3 id='area-Marketing'>Marketing</h3><div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operação</th>
+<th>Titulares</th>
+<th>Dados tratados</th>
+<th>Base legal</th>
+<th>Retenção</th>
+</tr></thead><tbody>
+<tr id='op-mkt-newsletter'><td><code>mkt-newsletter</code></td><td><b>Envio de newsletter</b><br><span class='ref'>Enviar novidades e ofertas para quem se inscreveu.</span><br><span class='ref'>Responsável: Coordenação de Marketing</span></td><td>assinantes</td><td><span class='tag'>nome</span><span class='tag'>e-mail</span><span class='tag'>preferências</span></td><td>Consentimento<br><span class='ref'>art. 7, I · GDPR art. 6(1)(a)</span></td><td>Até o titular cancelar a inscrição</td></tr>
+<tr id='op-mkt-perfil-de-consumo'><td><code>mkt-perfil-de-consumo</code></td><td><b>Perfil de consumo para ofertas</b><br><span class='ref'>Agrupar clientes por hábitos de compra para personalizar ofertas.</span><br><span class='ref'>Responsável: Coordenação de Marketing</span></td><td>clientes</td><td><span class='tag'>nome</span><span class='tag'>e-mail</span><span class='tag'>histórico de compras</span><span class='tag'>cidade</span></td><td>Legítimo interesse<br><span class='ref'>art. 7, IX · GDPR art. 6(1)(f)</span></td><td>2 anos sem compras</td></tr>
+</tbody></table></div>
+<h3 id='area-RH'>RH</h3><div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operação</th>
+<th>Titulares</th>
+<th>Dados tratados</th>
+<th>Base legal</th>
+<th>Retenção</th>
+</tr></thead><tbody>
+<tr id='op-rh-atestados-medicos'><td><code>rh-atestados-medicos</code></td><td><b>Atestados médicos</b><br><span class='ref'>Registrar afastamentos e abonar faltas por motivo de saúde.</span><br><span class='ref'>Responsável: Gerência de RH</span></td><td>colaboradores</td><td><span class='tag'>nome</span><span class='tag'>matrícula</span><span class='tag'>período de afastamento</span><span class='tag sens' title='sensível'>Saúde</span></td><td>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 7, II · GDPR art. 6(1)(c)</span><br>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 11, II, a</span></td><td>20 anos<br><span class='ref'>Guarda de documentos de saúde ocupacional</span></td></tr>
+<tr id='op-rh-folha-pagamento'><td><code>rh-folha-pagamento</code></td><td><b>Folha de pagamento</b><br><span class='ref'>Calcular e pagar salários e benefícios e enviar as informações exigidas por lei.</span><br><span class='ref'>Responsável: Gerência de RH</span></td><td>colaboradores, dependentes</td><td><span class='tag'>nome</span><span class='tag'>CPF</span><span class='tag'>dados bancários</span><span class='tag'>salário</span><span class='tag'>dependentes</span></td><td>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 7, II · GDPR art. 6(1)(c)</span></td><td>5 anos após o desligamento<br><span class='ref'>Prazos trabalhistas e previdenciários</span></td></tr>
+<tr id='op-rh-ponto-biometrico'><td><code>rh-ponto-biometrico</code></td><td><b>Controle de ponto por biometria</b><br><span class='ref'>Registrar a jornada de trabalho.</span><br><span class='ref'>Responsável: Gerência de RH</span></td><td>colaboradores</td><td><span class='tag'>nome</span><span class='tag'>matrícula</span><span class='tag'>horários de entrada e saída</span><span class='tag sens' title='sensível'>Dado biométrico</span></td><td>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 7, II · GDPR art. 6(1)(c)</span><br>Prevenção à fraude e segurança do titular<br><span class='ref'>art. 11, II, g</span></td><td>5 anos<br><span class='ref'>Comprovação da jornada</span></td></tr>
+<tr id='op-rh-recrutamento'><td><code>rh-recrutamento</code></td><td><b>Recrutamento e seleção</b><br><span class='ref'>Receber currículos e conduzir processos seletivos.</span><br><span class='ref'>Responsável: Gerência de RH</span></td><td>candidatos</td><td><span class='tag'>nome</span><span class='tag'>e-mail</span><span class='tag'>telefone</span><span class='tag'>currículo</span><span class='tag'>histórico profissional</span></td><td>Execução de contrato ou procedimentos preliminares<br><span class='ref'>art. 7, V · GDPR art. 6(1)(b)</span></td><td>6 meses após o fim do processo seletivo</td></tr>
+</tbody></table></div>
+<h3 id='area-TI'>TI</h3><div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operação</th>
+<th>Titulares</th>
+<th>Dados tratados</th>
+<th>Base legal</th>
+<th>Retenção</th>
+</tr></thead><tbody>
+<tr id='op-ti-cftv'><td><code>ti-cftv</code></td><td><b>Câmeras de segurança (CFTV)</b><br><span class='ref'>Proteger pessoas e patrimônio nas instalações.</span><br><span class='ref'>Responsável: Coordenação de TI</span></td><td>colaboradores, visitantes</td><td><span class='tag'>imagem</span></td><td>Legítimo interesse<br><span class='ref'>art. 7, IX · GDPR art. 6(1)(f)</span></td><td><span class='bad'>não informado</span></td></tr>
+<tr id='op-ti-logs-de-acesso'><td><code>ti-logs-de-acesso</code></td><td><b>Registros de acesso ao site</b><br><span class='ref'>Guardar os registros de acesso ao site exigidos por lei e investigar incidentes.</span><br><span class='ref'>Responsável: Coordenação de TI</span></td><td>visitantes do site, clientes</td><td><span class='tag'>endereço IP</span><span class='tag'>data e hora</span><span class='tag'>página acessada</span></td><td>Cumprimento de obrigação legal ou regulatória<br><span class='ref'>art. 7, II · GDPR art. 6(1)(c)</span></td><td>6 meses<br><span class='ref'>Guarda de registros de acesso a aplicações (Marco Civil da Internet, art. 15)</span></td></tr>
+</tbody></table></div>
+<h2>Operadores e compartilhamentos</h2>
+<div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>Operador</th>
+<th>Serviço</th>
+<th>País</th>
+<th>Contrato</th>
+<th>DPA</th>
+</tr></thead><tbody><tr><td><a href='#op-atd-chat-online'><code>atd-chat-online</code></a></td><td>Chat Exemplo Corp.</td><td>Ferramenta de chat</td><td>US</td><td>sim</td><td>sim</td></tr><tr><td><a href='#op-atd-sac'><code>atd-sac</code></a></td><td>Contact Center Exemplo Ltda</td><td>Atendimento telefônico</td><td>BR</td><td>sim</td><td>sim</td></tr><tr><td><a href='#op-mkt-newsletter'><code>mkt-newsletter</code></a></td><td>Mail Exemplo Inc.</td><td>Disparo de e-mails</td><td>US</td><td>sim</td><td>sim</td></tr><tr><td><a href='#op-rh-folha-pagamento'><code>rh-folha-pagamento</code></a></td><td>Folha Exemplo Serviços Ltda</td><td>Processamento da folha</td><td>BR</td><td>sim</td><td>sim</td></tr><tr><td><a href='#op-rh-recrutamento'><code>rh-recrutamento</code></a></td><td>Vagas Exemplo Tecnologia Ltda</td><td>Plataforma de recrutamento</td><td>BR</td><td>sim</td><td><span class='bad'>não</span></td></tr></tbody></table></div>
+<h3>Compartilhado com</h3><div class='scroll'><table><thead><tr>
+<th>ID</th><th>Destinatário</th><th>Finalidade</th>
+</tr></thead><tbody><tr><td><a href='#op-fin-analise-de-credito'><code>fin-analise-de-credito</code></a></td><td>Birô de crédito (fictício)</td><td>Consulta de score</td></tr><tr><td><a href='#op-rh-folha-pagamento'><code>rh-folha-pagamento</code></a></td><td>Órgãos públicos (eSocial)</td><td>Obrigação legal</td></tr></tbody></table></div>
+<h2>Transferências internacionais</h2>
+<div class='scroll'><table><thead><tr>
+<th>ID</th>
+<th>País</th>
+<th>Destinatário</th>
+<th>Mecanismo (art. 33)</th>
+</tr></thead><tbody><tr><td><a href='#op-atd-chat-online'><code>atd-chat-online</code></a></td><td>US</td><td>Chat Exemplo Corp.</td><td><span class='bad'>não informado</span></td></tr><tr><td><a href='#op-mkt-newsletter'><code>mkt-newsletter</code></a></td><td>US</td><td>Mail Exemplo Inc.</td><td>Cláusulas-padrão contratuais<br><span class='ref'>art. 33, II, b</span></td></tr></tbody></table></div>
+<h2>Matriz de risco das operações que pedem RIPD</h2>
+<div class='scroll'><div class='matrix'>
+<div class='ax'>5</div>
+<div class='cell lo' title='5 x 1 = 5'></div>
+<div class='cell mid' title='5 x 2 = 10'></div>
+<div class='cell hi' title='5 x 3 = 15'></div>
+<div class='cell hi' title='5 x 4 = 20'></div>
+<div class='cell hi' title='5 x 5 = 25'></div>
+<div class='ax'>4</div>
+<div class='cell lo' title='4 x 1 = 4'></div>
+<div class='cell mid' title='4 x 2 = 8'></div>
+<div class='cell hi' title='4 x 3 = 12'><a href='#op-mkt-perfil-de-consumo'>mkt-perfil-de-consumo</a></div>
+<div class='cell hi' title='4 x 4 = 16'></div>
+<div class='cell hi' title='4 x 5 = 20'></div>
+<div class='ax'>3</div>
+<div class='cell lo' title='3 x 1 = 3'></div>
+<div class='cell mid' title='3 x 2 = 6'></div>
+<div class='cell mid' title='3 x 3 = 9'></div>
+<div class='cell hi' title='3 x 4 = 12'><a href='#op-rh-atestados-medicos'>rh-atestados-medicos</a><br><a href='#op-rh-ponto-biometrico'>rh-ponto-biometrico</a></div>
+<div class='cell hi' title='3 x 5 = 15'></div>
+<div class='ax'>2</div>
+<div class='cell lo' title='2 x 1 = 2'></div>
+<div class='cell lo' title='2 x 2 = 4'></div>
+<div class='cell mid' title='2 x 3 = 6'></div>
+<div class='cell mid' title='2 x 4 = 8'></div>
+<div class='cell mid' title='2 x 5 = 10'></div>
+<div class='ax'>1</div>
+<div class='cell lo' title='1 x 1 = 1'></div>
+<div class='cell lo' title='1 x 2 = 2'></div>
+<div class='cell lo' title='1 x 3 = 3'></div>
+<div class='cell lo' title='1 x 4 = 4'></div>
+<div class='cell lo' title='1 x 5 = 5'></div>
+<div></div><div class='ax'>1</div><div class='ax'>2</div><div class='ax'>3</div><div class='ax'>4</div><div class='ax'>5</div>
+</div><p class='ref' style='padding:0 10px 10px'>Probabilidade (↑) x Impacto (→)</p></div>
+<div class='scroll' style='margin-top:10px'><table><thead><tr>
+<th>ID</th><th>Operação</th><th>Motivo</th><th>RIPD</th>
+</tr></thead><tbody>
+<tr><td><a href='#op-mkt-perfil-de-consumo'><code>mkt-perfil-de-consumo</code></a></td><td>Perfil de consumo para ofertas</td><td>pontuação 12</td><td><span class='bad'>não existe</span></td></tr>
+<tr><td><a href='#op-rh-atestados-medicos'><code>rh-atestados-medicos</code></a></td><td>Atestados médicos</td><td>pontuação 12, dados sensíveis</td><td><span>concluído</span> <span class='ref'>RIPD-2026-01</span></td></tr>
+<tr><td><a href='#op-rh-ponto-biometrico'><code>rh-ponto-biometrico</code></a></td><td>Controle de ponto por biometria</td><td>pontuação 12, dados sensíveis</td><td><span class='bad'>em andamento</span></td></tr>
+</tbody></table></div>
+<h2 id='pending'>Pendências</h2>
+<div class='scroll'><table><thead><tr>
+<th>Nível</th>
+<th>Arquivo</th>
+<th>Campo</th>
+<th>Mensagem</th>
+</tr></thead><tbody>
+<tr><td class='lvl-error'>erro <span class='ref'>R005</span></td><td><code>operations/atd-chat-online.yaml</code></td><td><code>international_transfers[0].mechanism</code></td><td>transferência internacional para US sem o mecanismo do art. 33</td></tr>
+<tr><td class='lvl-error'>erro <span class='ref'>R002</span></td><td><code>operations/mkt-perfil-de-consumo.yaml</code></td><td><code>lia</code></td><td>legítimo interesse exige o registro do teste de balanceamento (LIA, art. 10), com data</td></tr>
+<tr><td class='lvl-error'>erro <span class='ref'>R004</span></td><td><code>operations/ti-cftv.yaml</code></td><td><code>retention.period</code></td><td>prazo de retenção não informado (retention.period)</td></tr>
+<tr><td class='lvl-warning'>aviso <span class='ref'>R007</span></td><td><code>operations/mkt-perfil-de-consumo.yaml</code></td><td><code>dpia</code></td><td>operação de alto risco (pontuação 12) sem RIPD concluído</td></tr>
+<tr><td class='lvl-warning'>aviso <span class='ref'>R007</span></td><td><code>operations/rh-ponto-biometrico.yaml</code></td><td><code>dpia</code></td><td>operação de alto risco (pontuação 12, dados sensíveis) sem RIPD concluído</td></tr>
+<tr><td class='lvl-warning'>aviso <span class='ref'>R006</span></td><td><code>operations/rh-recrutamento.yaml</code></td><td><code>processors[0]</code></td><td>operador &#x27;Vagas Exemplo Tecnologia Ltda&#x27; sem cláusulas de proteção de dados (DPA)</td></tr>
+<tr><td class='lvl-warning'>aviso <span class='ref'>R008</span></td><td><code>operations/ti-cftv.yaml</code></td><td><code>security_measures</code></td><td>nenhuma medida de segurança registrada (art. 46)</td></tr>
+</tbody></table></div>
+<footer>lgpd-ropa-kit 1.0.0 · Ferramenta de apoio: não substitui orientação jurídica.</footer>
+</main></body></html>

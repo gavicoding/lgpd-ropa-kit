@@ -1,0 +1,19 @@
+id: ti-logs-de-acesso
+name: Registros de acesso ao site
+area: TI
+owner: Coordenação de TI
+purpose: Guardar os registros de acesso ao site exigidos por lei e investigar incidentes.
+data_subjects: [visitantes do site, clientes]
+personal_data: [endereço IP, data e hora, página acessada]
+legal_basis: legal_obligation
+retention:
+  period: 6 meses
+  justification: Guarda de registros de acesso a aplicações (Marco Civil da Internet, art. 15)
+  disposal: Rotação automática dos logs
+systems: [Servidor web, Central de logs]
+security_measures:
+  - Logs imutáveis na central
+  - Acesso só da equipe de segurança
+risk:
+  likelihood: 2
+  impact: 2

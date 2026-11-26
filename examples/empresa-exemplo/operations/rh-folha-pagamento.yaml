@@ -1,0 +1,29 @@
+id: rh-folha-pagamento
+name: Folha de pagamento
+area: RH
+owner: Gerência de RH
+purpose: Calcular e pagar salários e benefícios e enviar as informações exigidas por lei.
+data_subjects: [colaboradores, dependentes]
+personal_data: [nome, CPF, dados bancários, salário, dependentes]
+legal_basis: legal_obligation
+retention:
+  period: 5 anos após o desligamento
+  justification: Prazos trabalhistas e previdenciários
+  disposal: Exclusão no sistema de folha e descarte seguro de papel
+systems: [Sistema de folha]
+processors:
+  - name: Folha Exemplo Serviços Ltda
+    service: Processamento da folha
+    country: BR
+    contract: true
+    dpa: true
+sharing:
+  - recipient: Órgãos públicos (eSocial)
+    purpose: Obrigação legal
+security_measures:
+  - Acesso por perfil, só para a equipe de RH
+  - Criptografia em repouso
+  - Registro de acessos
+risk:
+  likelihood: 2
+  impact: 3

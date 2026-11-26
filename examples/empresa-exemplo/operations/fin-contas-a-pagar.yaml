@@ -1,0 +1,19 @@
+id: fin-contas-a-pagar
+name: Contas a pagar
+area: Financeiro
+owner: Gerência Financeira
+purpose: Pagar fornecedores pessoa física e prestadores de serviço.
+data_subjects: [fornecedores pessoa física]
+personal_data: [nome, CPF, dados bancários, notas fiscais]
+legal_basis: contract
+retention:
+  period: 5 anos após o exercício
+  justification: Prazo de guarda de documentos fiscais
+  disposal: Exclusão no ERP
+systems: [ERP]
+security_measures:
+  - Aprovação em duas etapas para pagamentos
+  - Acesso por perfil
+risk:
+  likelihood: 2
+  impact: 2

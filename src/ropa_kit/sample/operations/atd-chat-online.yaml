@@ -1,0 +1,26 @@
+id: atd-chat-online
+name: Chat de atendimento no site
+area: Atendimento
+owner: Coordenação de Atendimento
+purpose: Atender clientes pelo chat do site.
+data_subjects: [clientes, visitantes do site]
+personal_data: [nome, e-mail, conteúdo da conversa]
+legal_basis: contract
+retention:
+  period: 1 ano
+  disposal: Exclusão automática das conversas
+systems: [Ferramenta de chat]
+processors:
+  - name: Chat Exemplo Corp.
+    service: Ferramenta de chat
+    country: US
+    contract: true
+    dpa: true
+international_transfers:
+  - country: US
+    recipient: Chat Exemplo Corp.
+security_measures:
+  - Conversas criptografadas em trânsito
+risk:
+  likelihood: 2
+  impact: 2

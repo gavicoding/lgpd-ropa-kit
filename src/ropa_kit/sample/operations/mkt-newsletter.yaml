@@ -1,0 +1,28 @@
+id: mkt-newsletter
+name: Envio de newsletter
+area: Marketing
+owner: Coordenação de Marketing
+purpose: Enviar novidades e ofertas para quem se inscreveu.
+data_subjects: [assinantes]
+personal_data: [nome, e-mail, preferências]
+legal_basis: consent
+retention:
+  period: Até o titular cancelar a inscrição
+  disposal: Exclusão da lista em até 10 dias
+systems: [Ferramenta de e-mail marketing]
+processors:
+  - name: Mail Exemplo Inc.
+    service: Disparo de e-mails
+    country: US
+    contract: true
+    dpa: true
+international_transfers:
+  - country: US
+    recipient: Mail Exemplo Inc.
+    mechanism: standard_clauses
+security_measures:
+  - Link de descadastro em todo e-mail
+  - Dupla confirmação da inscrição
+risk:
+  likelihood: 2
+  impact: 2

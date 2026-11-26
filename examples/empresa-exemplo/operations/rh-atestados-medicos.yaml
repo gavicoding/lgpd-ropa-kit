@@ -1,0 +1,25 @@
+id: rh-atestados-medicos
+name: Atestados médicos
+area: RH
+owner: Gerência de RH
+purpose: Registrar afastamentos e abonar faltas por motivo de saúde.
+data_subjects: [colaboradores]
+personal_data: [nome, matrícula, período de afastamento]
+sensitive_data: [health]
+legal_basis: legal_obligation
+sensitive_legal_basis: legal_obligation
+retention:
+  period: 20 anos
+  justification: Guarda de documentos de saúde ocupacional
+  disposal: Fragmentação do papel e exclusão do arquivo digital
+systems: [Sistema de saúde ocupacional]
+security_measures:
+  - Pasta separada, acesso só da medicina do trabalho
+  - Criptografia em repouso
+risk:
+  likelihood: 3
+  impact: 4
+dpia:
+  status: done
+  reference: RIPD-2026-01
+  date: 2026-05-10

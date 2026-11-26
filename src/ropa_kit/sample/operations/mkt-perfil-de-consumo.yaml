@@ -1,0 +1,17 @@
+id: mkt-perfil-de-consumo
+name: Perfil de consumo para ofertas
+area: Marketing
+owner: Coordenação de Marketing
+purpose: Agrupar clientes por hábitos de compra para personalizar ofertas.
+data_subjects: [clientes]
+personal_data: [nome, e-mail, histórico de compras, cidade]
+legal_basis: legitimate_interest
+retention:
+  period: 2 anos sem compras
+  disposal: Anonimização do histórico
+systems: [CRM]
+security_measures:
+  - Base pseudonimizada para análise
+risk:
+  likelihood: 4
+  impact: 3

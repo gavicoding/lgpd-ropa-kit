@@ -1,0 +1,16 @@
+id: ti-cftv
+name: Câmeras de segurança (CFTV)
+area: TI
+owner: Coordenação de TI
+purpose: Proteger pessoas e patrimônio nas instalações.
+data_subjects: [colaboradores, visitantes]
+personal_data: [imagem]
+legal_basis: legitimate_interest
+lia:
+  date: 2026-03-02
+  reference: LIA-2026-03
+  outcome: approved_with_measures
+systems: [Gravador de vídeo]
+risk:
+  likelihood: 2
+  impact: 3

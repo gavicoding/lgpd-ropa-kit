@@ -1,0 +1,23 @@
+id: rh-recrutamento
+name: Recrutamento e seleção
+area: RH
+owner: Gerência de RH
+purpose: Receber currículos e conduzir processos seletivos.
+data_subjects: [candidatos]
+personal_data: [nome, e-mail, telefone, currículo, histórico profissional]
+legal_basis: contract
+retention:
+  period: 6 meses após o fim do processo seletivo
+  disposal: Exclusão automática na plataforma
+systems: [Plataforma de vagas]
+processors:
+  - name: Vagas Exemplo Tecnologia Ltda
+    service: Plataforma de recrutamento
+    country: BR
+    contract: true
+    dpa: false
+security_measures:
+  - Acesso só para recrutadores
+risk:
+  likelihood: 2
+  impact: 2

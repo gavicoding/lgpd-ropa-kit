@@ -1,0 +1,21 @@
+id: fin-analise-de-credito
+name: Análise de crédito de clientes
+area: Financeiro
+owner: Gerência Financeira
+purpose: Definir limite de crédito para vendas a prazo.
+data_subjects: [clientes]
+personal_data: [nome, CPF, renda declarada, score de crédito]
+legal_basis: credit_protection
+retention:
+  period: 5 anos após o fim do relacionamento
+  disposal: Anonimização dos dados de score
+systems: [ERP, Portal de crédito]
+sharing:
+  - recipient: Birô de crédito (fictício)
+    purpose: Consulta de score
+security_measures:
+  - Consulta registrada com usuário e motivo
+  - Acesso por perfil
+risk:
+  likelihood: 3
+  impact: 3

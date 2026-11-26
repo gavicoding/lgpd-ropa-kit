@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lgpd-ropa-kit"
+dynamic = ["version"]
+description = "LGPD/GDPR Record of Processing Activities as versioned YAML: schema validation, legal-basis checks, DPIA skeletons and a self-contained HTML report for DPOs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Gabriel Souza" }]
+keywords = ["lgpd", "gdpr", "privacy", "dpo", "ropa", "dpia", "compliance", "yaml"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business",
+    "Topic :: Security",
+]
+dependencies = ["pyyaml>=6", "jsonschema>=4.18"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+ropa-kit = "ropa_kit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gavicoding/lgpd-ropa-kit"
+Issues = "https://github.com/gavicoding/lgpd-ropa-kit/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "ropa_kit.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ropa_kit = ["ropa.schema.json", "sample/*.yaml", "sample/operations/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001"]

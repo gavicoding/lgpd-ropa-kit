@@ -1,0 +1,23 @@
+id: rh-ponto-biometrico
+name: Controle de ponto por biometria
+area: RH
+owner: Gerência de RH
+purpose: Registrar a jornada de trabalho.
+data_subjects: [colaboradores]
+personal_data: [nome, matrícula, horários de entrada e saída]
+sensitive_data: [biometric]
+legal_basis: legal_obligation
+sensitive_legal_basis: fraud_prevention
+retention:
+  period: 5 anos
+  justification: Comprovação da jornada
+  disposal: Template biométrico apagado no desligamento
+systems: [Relógio de ponto, Sistema de ponto]
+security_measures:
+  - Template biométrico guardado só no relógio, sem imagem da digital
+  - Rede separada para os relógios
+risk:
+  likelihood: 3
+  impact: 4
+dpia:
+  status: in_progress
