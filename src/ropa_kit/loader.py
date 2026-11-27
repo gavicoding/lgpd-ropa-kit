@@ -62,6 +62,9 @@ def _read(root: Path, path: Path) -> Document:
         return Document(rel, None, f"{getattr(exc, 'problem', None) or exc}{where}")
     except UnicodeDecodeError:
         return Document(rel, None, "file is not UTF-8")
+    except OSError as exc:
+        # permission denied, file locked by a sync client, a folder named like *.yaml...
+        return Document(rel, None, f"cannot read file: {exc.strerror or exc}")
     return Document(rel, data)
 
 

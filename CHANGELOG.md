@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- A file under `operations/` that cannot be read (permission denied, locked by a sync client, or a
+  folder named like `*.yaml`) is now reported as a `Y001` finding instead of crashing with a traceback.
+
 ## 1.0.0 (2026-11-26)
 
 First release.
