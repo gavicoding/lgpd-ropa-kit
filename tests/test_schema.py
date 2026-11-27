@@ -91,6 +91,14 @@ def test_yaml_syntax_error(make_inventory):
     assert "line" in findings[0].message
 
 
+def test_unreadable_file_is_a_finding_not_a_crash(make_inventory):
+    folder = make_inventory(base_op())
+    (folder / "operations" / "pasta.yaml").mkdir()
+    findings = validate(load_inventory(folder))
+    assert [(f.code, f.file) for f in findings] == [("Y001", "operations/pasta.yaml")]
+    assert "cannot read file" in findings[0].message
+
+
 def test_file_that_is_not_a_mapping(make_inventory):
     folder = make_inventory(raw={"operations/lista.yml": "- a\n- b\n"})
     assert [f.code for f in validate(load_inventory(folder))] == ["Y002"]
